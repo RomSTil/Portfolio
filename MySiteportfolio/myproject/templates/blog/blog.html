@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RomSTil</title>
+    <link rel="stylesheet" href="{% static 'css/BlogStyle.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}"><h1>RomSTil</h1></a>
+        <a href="https://github.com" target="_blank" class="github-link">
+            <img src="{% static 'assets/github.svg' %}" alt="GitHub">
+        </a>
+    </header>
+    
+    <main>
+        <div class="card-container">
+            {% for post in post_list %}
+                <div class="card">
+                    <div class="Img-and-Name">
+                        <div class="thumbnail">
+                            <img src="{{ post.img.url }}", width="79px", height="79px", class="rounded-image">
+                        </div>
+                        <h2>{{ post.title }}</h2>
+                    </div>
+                    <div class="content">
+                        <div class="short-description">
+                            <p>Версия: {{ post.version }}</p>
+                            <p>Дата: {{ post.date }}</p>
+                        </div>
+                        <div class="btn">
+                            <a href="{{ post.link_in_git }}"><button class="open-button">Открыть</button></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

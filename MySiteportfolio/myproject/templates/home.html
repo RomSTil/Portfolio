@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RomSTil</title>
+    <link rel="stylesheet" href="{% static 'css/MenuStyle.css' %}">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+            <a href=""><span>RomSTil</span></a>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/RomSTil"><img src="{%static 'assets/github.svg' %}"></a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="description">
+                <h1>Обо мне</h1>
+            <p><strong>Имя:</strong> Максим</p>
+            <p><strong>Возраст:</strong> 17 лет</p>
+
+            <h2>О себе:</h2>
+            <p>Я — начинающий разработчик с сильным увлечением к программированию на Python. Мои основные навыки включают понимание объектно-ориентированного программирования и абстрактного программирования.</p>
+
+            <h2>Фреймворки:</h2>
+            <ul>
+                <li><strong>Flet</strong> — для создания современных веб-приложений.</li>
+                <li><strong>Django</strong> — для разработки сложных веб-сайтов и приложений.</li>
+                <li><strong>Disnake</strong> и <strong>discord.py</strong> — для создания ботов в Discord.</li>
+            </ul>
+
+            <p>С каждым проектом я стремлюсь развиваться и улучшать свои навыки, находя новые и эффективные решения для поставленных задач.</p>
+        </div>
+        <a href="{% url 'blog' %}"><button class="main-button">Мои проекты</button></a>  
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Базовые стили */
+body {
+    background-color: #F4EED7;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #181513;
+}
+
+/* Навигация */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid #181513;
+}
+
+
+
+.logo span {
+    font-size: 2rem;
+    color: #181513;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #181513;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Разделительная линия */
+
+
+/* Контейнер для основного контента */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Центрирование по вертикали */
+}
+
+/*описание\резюме*/
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+
+    margin: 25px;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border-radius: 25px;
+    border: 3px solid #181513;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #666;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+/*описание\резюме*/
+
+
+/* Кнопка */
+.main-button {
+    background-color: #181513;
+    color: #F4EED7;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}

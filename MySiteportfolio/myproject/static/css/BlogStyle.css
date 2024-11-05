@@ -1,0 +1,122 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat-body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4EED7;
+    color: #181513;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid #181513;
+}
+
+a {
+    color: #181513;
+    text-decoration: none;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.github-link img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 0.5fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f5f5dc;
+    border: 3px solid #181513;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.Img-and-Name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.thumbnail {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+
+rounded-image {
+    border-radius: 15px;
+}
+
+.open-button {
+    background-color: #181513;
+    color: #f5f5dc;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
